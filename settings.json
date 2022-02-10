@@ -1,0 +1,4 @@
+{
+  "backup_dir": ["/home/issei/Desktop", "/home/issei/.ssh", "/home/issei/backup"],
+  "store_dir" : "/mnt/backup/issei"
+}

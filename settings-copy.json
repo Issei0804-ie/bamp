@@ -1,0 +1,4 @@
+{
+  "backup_dir": ["/home/sample_user/dir", "/home/sample_user/etc"],
+  "store_dir" : "/mnt/sample"
+}
