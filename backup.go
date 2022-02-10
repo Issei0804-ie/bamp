@@ -23,8 +23,14 @@ type Settings struct {
 
 func NewSettings() Settings {
 	s := Settings{}
+	if len(os.Args) == 1 {
+		log.Fatalln("you should set path of settings.json")
+		log.Fatalln("example: bamp ./settings.json")
+		os.Exit(1)
+	}
+	settingsPath := os.Args[1]
 
-	data, err := ioutil.ReadFile("./settings.json")
+	data, err := ioutil.ReadFile(settingsPath)
 	if err != nil {
 		log.Fatalln("can not read settings.json")
 		os.Exit(1)
