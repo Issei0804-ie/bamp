@@ -48,6 +48,7 @@ func NewSettings() Settings {
 func main() {
 
 	s := NewSettings()
+	log.SetOutput(os.Stdout)
 
 	now := time.Now()
 	store := strconv.Itoa(now.Year()) + "-" + now.Month().String() + "-" + strconv.Itoa(now.Day()) + ".tar.gz"
