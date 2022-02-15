@@ -1,4 +1,4 @@
-## Qhat is bamp?
+## What is bamp?
 
 bamp is backup-software that made by Go and can use quick that you just write config to settings.json(You modify crontab if you need it).
 
